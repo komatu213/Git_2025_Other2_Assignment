@@ -18,5 +18,21 @@
 
     <button type="button" onclick="checkAnswer()">解答する</button>
   </form>
+
+  <p id="result"></p>
+
+  <script>
+    function checkAnswer() {
+      const answer = document.querySelector('input[name="model"]:checked').value;
+      const result = document.getElementById("result");
+      if (answer === "データの処理・演算") {
+        result.textContent = "正解です！";
+        result.style.color = "green";
+      } else {
+        result.textContent = "不正解です。";
+        result.style.color = "red";
+      }
+    }
+  </script>
 	</body>
 </html>
