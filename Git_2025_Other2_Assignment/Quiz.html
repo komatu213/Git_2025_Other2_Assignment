@@ -6,5 +6,17 @@
 	</head>
 	<body>
 		<script src="Quiz.js"></script>
+		<p>
+    CPUの主な役割はどれか。
+  </p>
+
+  <form>
+    <label><input type="radio" name="model" value="データの保存"> データの保存</label><br>
+    <label><input type="radio" name="model" value="データの処理・演算"> データの処理・演算</label><br>
+    <label><input type="radio" name="model" value="データの通信制御"> データの通信制御</label><br>
+    <label><input type="radio" name="model" value="画面の表示" checked> 画面の表示</label><br><br>
+
+    <button type="button" onclick="checkAnswer()">解答する</button>
+  </form>
 	</body>
 </html>
